@@ -1,0 +1,91 @@
+.n-wrapper {
+  height: 10vh;
+  overflow: hidden;
+  display: flex;
+
+  justify-content: space-between;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+.n-name {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  letter-spacing: -2px;
+  transition: all 0.5s ease-in-out;
+}
+.n-name span {
+  color: var(--orange);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.n-name:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+.n-name span:hover {
+  cursor: pointer;
+  color: var(--black);
+}
+.n-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+}
+.n-list {
+  flex-direction: 10;
+}
+.n-list > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+.n-list > ul > li {
+  font-size: 18px;
+  font-weight: 600;
+}
+.n-list > ul > .links li:hover {
+  color: var(--orange);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.n-button {
+  flex: 2;
+  height: 40px;
+  padding: 0 !important;
+  width: 120px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .n-wrapper {
+    margin-bottom: 4rem;
+  }
+  .n-list {
+    display: none;
+  }
+  .n-button {
+    display: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+
+
+
+  .n-list ul li {
+    font-size: 17px !important;
+  }
+  
+
+}

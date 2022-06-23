@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+:root
+{
+  --yellow: #2c97f5;
+    --orange : #1faffc;
+    --black : #242D49;
+    --dark :  #353434;
+    --darkText : #d7d7d7;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%) ;
+    --orangeCard: rgba(31, 167, 252, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    padding: 0.5rem 4rem;
+    overflow: hidden;
+    color: var(--black);    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button{
+  border-radius: 34px;
+  border: none;
   color: white;
-}
+  font-size: 17px;
+  font-weight: bold;
+  padding: 11px 26px;
+  background: linear-gradient(180deg, #0faafd 26.71%, #137ed0 99.36%);
+  box-shadow: 0px 10px px 1px rgba(40, 152, 251, 0.331);
+}  
 
-.App-link {
-  color: #61dafb;
-}
+.button:hover{
+  transition: all .4S ease-in-out;
+    background: white;
+    cursor: pointer;
+    color: var(--orange);
+    border: 1PX solid var(--orange);
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media screen and (max-width:480px ) {
+    .App{
+      padding: 0.5rem 1rem;
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+@media screen and (max-width: 950px) {
+  .App{
+    padding: 0.5rem 2rem;
   }
+
+  .button{
+    padding: 0 !important;
+    font-size: 14px;
+  }
+
+
 }

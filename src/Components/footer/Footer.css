@@ -1,0 +1,27 @@
+.footer {
+   height: 70vh;
+   display: flex;
+   align-content: center;
+    width: 100% !important;
+    background-color: var(--black);
+  }
+  .f-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    color: white;
+  }
+  .f-icons {
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 480px){
+    .f-content{
+      transform: scale(.5);
+    }
+  }

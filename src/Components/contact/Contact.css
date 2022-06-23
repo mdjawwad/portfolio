@@ -1,0 +1,86 @@
+.contact-form {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 80vh;
+  margin-top: 4rem;
+}
+.c-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+}
+
+.c-right > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.c-right .user {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.5em;
+  border: none;
+  outline: 2px solid var(--orange);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.c-awesome {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.c-awesome > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+
+  font-size: 2.5rem;
+}
+.c-awesome > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 0 0 15px 0;
+}
+
+.c-awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact-button {
+  text-align: center;
+  width: 3rem;
+  height: 1rem;
+  border: none;
+}
+
+textarea {
+  height: 4rem !important;
+}
+.c-blur1 {
+  top: 1rem;
+  left: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form {
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    height: 28rem;
+  }
+  form {
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .user {
+    height: 1.5rem !important;
+    width: 15rem !important;
+  }
+}
